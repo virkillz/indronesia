@@ -23,7 +23,7 @@
     var _longitude = <?php echo $latitude;?>;
     var zoom = <?php echo $zoom;?>;
     // var jsonPath = '<?php echo base_url();?>assets/assets/json/items.json.txt';
-    var jsonPath = 'http://localhost:8000/indronesia/Getlist';
+    var jsonPath = '<?php echo base_url();?>Getlist';
 
     // Load JSON data and create Google Maps
 
