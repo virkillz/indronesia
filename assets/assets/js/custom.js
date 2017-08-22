@@ -552,7 +552,7 @@ function quickView(id){
     $.ajax({
         type: 'POST',
         url: 'Detail/cobamodal',
-        data: id,
+        data: {'id':id},
         success: function (data) {
             // Create HTML element with loaded data
             $('body').append(data);

@@ -23,6 +23,7 @@
                 <section><h3>Deskripsi</h3>
                     <p>
                     <?php echo $item->description;?>
+
                     </p>
                 </section>
 <!--                 <section><h3>Overview</h3>

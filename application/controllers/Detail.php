@@ -27,7 +27,7 @@ class Detail extends CI_Controller {
 	{
 		$this->load->model('ModelPeta');
 		$id=$this->input->post('id');
-		// $id=7;
+		$detail['id']=$idx;
 		$detail['item']=$this->ModelPeta->get_detail($id);
 		$detail['kode']=$this->getYoutubeEmbedUrl($detail['item']->url);		
 		$this->load->view('modal',$detail);
