@@ -20,7 +20,12 @@ class Welcome extends CI_Controller {
 
 		// var_dump($get_prov);
 		// echo json_encode($get_prov);
-		$this->load->view('frontpage-head');
+		$head['pagetitle']="Ingin tau objek menarik di daerahmu dari udara?";
+		$head['pageimage']=base_url().'assets/assets/img/calonpageimage.jpg';
+		$head['pagedescription']="Berbagi video drone dari objek menarik di seluruh Indonesia. Disini kamu bisa temukan video udara dari objek2 wisata menarik dari seluruh penjuru Indonesia yang sudah diabadikan sebalumnya. Kamu juga bisa memamerkan hasil karyamu. ";
+		$head['pagetype']="website";
+
+		$this->load->view('frontpage-head',$head);
 		$this->load->view('frontpage',$get_prov);	
 		$this->load->view('frontpage-tail',$get_prov);
 

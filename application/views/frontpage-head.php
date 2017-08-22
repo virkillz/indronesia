@@ -15,6 +15,11 @@
     <link rel="stylesheet" href="<?php echo base_url();?>assets/assets/css/style.css" type="text/css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/assets/css/user.style.css" type="text/css">
 
-    <title>Spotter - Universal Directory Listing HTML Template</title>
+    <title><?PHP echo NAMA. ' - '. $pagetitle; ?></title>
+
+    <meta property="og:title" content="<?php echo $pagetitle;?>" />
+    <meta property="og:type" content="<?php echo $pagetype;?>" />
+    <meta property="og:image" content="<?php echo $pageimage;?>" />
+    <meta property="og:description" content="<?php echo $pagedescription;?>" />
 
 </head>

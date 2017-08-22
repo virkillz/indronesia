@@ -14,10 +14,27 @@ class Detail extends CI_Controller {
 		$get_detail->random=$random;
 		// var_dump($get_detail);
 		// echo $get_detailurl->url;
-
-		$this->load->view('frontpage-head');
-		$this->load->view('detail',$get_detail);					
+		$head['pagetitle']=$get_detail->title;
+		$head['pageimage']=$get_detail->image;
+		$head['pagedescription']=$get_detail->description;
+		$head['pagetype']="video";		
+		$this->load->view('frontpage-head',$head);
+		$this->load->view('detail',$get_detail);				
 	}
+
+
+	public function cobamodal()
+	{
+		$this->load->model('ModelPeta');
+		$id=$this->input->post('id');
+		$id=7;
+		$detail['item']=$this->ModelPeta->get_detail($id);
+		$detail['kode']=$this->getYoutubeEmbedUrl($detail['item']->url);		
+		$this->load->view('modal',$detail);
+		// var_dump($detail);
+	}
+
+
 
 		function getYoutubeEmbedUrl($url)
 	{
