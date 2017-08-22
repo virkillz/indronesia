@@ -77,13 +77,13 @@
                             <section class="block" id="main-content">
                                 <header class="page-title">
                                     <div class="title">
-                                        <h1><?php echo $title;?></h1>
-                                        <figure><?php echo $nama_lokasi;?></figure>
+                                        <h1><?php echo htmlentities($title);?></h1>
+                                        <figure><?php echo htmlentities($nama_lokasi);?></figure>
                                     </div>
                                     <div class="info">
                                         <div class="type">
                                             <i><img src="<?php echo base_url().'assets/'.$ikon;?>" alt=""></i>
-                                            <span><?php echo $kategori;?></span>
+                                            <span><?php echo htmlentities($kategori);?></span>
                                         </div>
                                     </div>
                                 </header>
@@ -94,19 +94,19 @@
                                         <section>
                                             <header><h3>Video Owner</h3></header>
                                             <address>
-                                                <div><?php echo $video_owner;?></div>
+                                                <div><?php echo htmlentities($video_owner);?></div>
                                                 <figure>
                                                     <div class="info">
                                                         <i class="fa fa-eye"></i>
-                                                        <span><?php echo $views;?></span>
+                                                        <span><?php echo htmlentities($views);?></span>
                                                     </div>
                                                     <div class="info">
                                                         <i class="fa fa-thumbs-o-up"></i>
-                                                        <span><?php echo $likes;?></span>
+                                                        <span><?php echo htmlentities($likes);?></span>
                                                     </div>
                                                     <div class="info">
                                                         <i class="fa fa-comments"></i>
-                                                        <a href="#"><?php echo $comments;?></a>
+                                                        <a href="#"><?php echo htmlentities($comments);?></a>
                                                     </div>
                                                 </figure>
                                             </address>
@@ -134,14 +134,14 @@
                                             <article class="block">
                                                 <header><h2>Description</h2></header>
                                                 <p>
-                                                <?php echo $description;?>
+                                                <?php echo htmlentities($description);?>
                                                 </p>
                                             </article>
                                             <!-- /.block -->
                                             <article class="block">
                                                 <header><h2>Tags</h2></header>
                                                 <p>
-                                                <?php echo $tags;?>
+                                                <?php echo htmlentities($tags);?>
                                                 </p>                                                
 
                                                 <!-- /.list-slider -->
@@ -384,7 +384,16 @@
         initializeOwl(rtl);
     });
 </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-105081443-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 <!--[if lte IE 9]>
 <script type="text/javascript" src="<?php echo base_url();?>assets/assets/js/ie-scripts.js"></script>
 <![endif]-->

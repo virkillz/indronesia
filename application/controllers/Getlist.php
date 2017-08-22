@@ -20,7 +20,7 @@ class Getlist extends CI_Controller {
 				'longitude' =>$item->latitude,
 				'url' =>$item->url,
 				'type' =>$item->kategori,
-				'type_icon' =>"assets/assets/icons/nature/natural-marvels/canyon-2.png",
+				'type_icon' =>base_url().'assets/'.$item->ikon,
 				'rating' => '4',
 				'gallery' =>array($item->image),
 				'features' =>array('ahoy'),

@@ -252,11 +252,11 @@
                                     </div>
                                     <div class="wrapper">
                                         <a href="'.base_url().'Detail?id='.$item->id.'"><h3>'.$item->title.'</h3></a>
-                                        <figure>'.$item->nama_lokasi.'</figure>
+                                        <figure>'.htmlentities($item->nama_lokasi).'</figure>
                                         <div class="info">
                                             <div class="type">
                                                 <i><img src="'.base_url().'assets/'.$item->ikon.'" alt=""></i>
-                                                <span>'.$item->kategori.'</span>
+                                                <span>'.htmlentities($item->kategori).'</span>
                                             </div>
                                             <div class="rating" data-rating="4"></div>
                                         </div>
