@@ -148,8 +148,8 @@
                                             </article>
                                             <!-- /.block -->
                                         </section>
-                                        <!--Reviews-->
-                                        <section class="block" id="reviews">
+
+<!--                                         <section class="block" id="reviews">
                                             <header class="clearfix">
                                                 <h2 class="pull-left">Comment</h2>
                                                 <a href="#write-review" class="btn framed icon pull-right roll">Write a review <i class="fa fa-pencil"></i></a>
@@ -157,15 +157,15 @@
                                             <article class="clearfix overall-rating">
                                                 <strong class="pull-left">Over Rating</strong>
                                                 <figure class="rating big color pull-right" data-rating="4"></figure>
-                                                <!-- /.rating -->
-                                            </article><!-- /.overall-rating-->
+                                          
+                                            </article>
                                             <section class="reviews">
                                                 <article class="review">
                                                     <figure class="author">
                                                         <img src="<?php echo base_url();?>assets/assets/img/default-avatar.png" alt="">
                                                         <div class="date">12.05.2014</div>
                                                     </figure>
-                                                    <!-- /.author-->
+                                                   
                                                     <div class="wrapper">
                                                         <h5>Catherine Brown</h5>
                                                         <figure class="rating big color" data-rating="4"></figure>
@@ -179,22 +179,22 @@
                                                             <span>Value</span>
                                                             <figure class="rating" data-rating="4"></figure>
                                                         </div>
-                                                        <!-- /.user-rating -->
+                                                       
                                                         <div class="individual-rating">
                                                             <span>Service</span>
                                                             <figure class="rating" data-rating="4"></figure>
                                                         </div>
-                                                        <!-- /.user-rating -->
+                                                    
                                                     </div>
-                                                    <!-- /.wrapper-->
+                                      
                                                 </article>
-                                                <!-- /.review -->
+                                        
                                                 <article class="review">
                                                     <figure class="author">
                                                         <img src="<?php echo base_url();?>assets/assets/img/default-avatar.png" alt="">
                                                         <div class="date">10.05.2014</div>
                                                     </figure>
-                                                    <!-- /.author-->
+                                               
                                                     <div class="wrapper">
                                                         <h5>John Doe</h5>
                                                         <figure class="rating big color" data-rating="5"></figure>
@@ -206,23 +206,21 @@
                                                             <span>Value</span>
                                                             <figure class="rating" data-rating="5"></figure>
                                                         </div>
-                                                        <!-- /.user-rating -->
+                                                     
                                                         <div class="individual-rating">
                                                             <span>Service</span>
                                                             <figure class="rating" data-rating="5"></figure>
                                                         </div>
-                                                        <!-- /.user-rating -->
+                                                    
                                                     </div>
-                                                    <!-- /.wrapper-->
+                                             
                                                 </article>
-                                                <!-- /.review -->
+                                             
                                             </section>
-                                            <!-- /.reviews-->
-                                        </section>
-                                        <!-- /#reviews -->
-                                        <!--end Reviews-->
-                                        <!--Review Form-->
-                                        <section id="write-review">
+                                       
+                                        </section> -->
+
+<!--                                         <section id="write-review">
                                             <header>
                                                 <h2>Write a Review</h2>
                                             </header>
@@ -233,21 +231,21 @@
                                                             <label for="form-review-name">Name</label>
                                                             <input type="text" class="form-control" id="form-review-name" name="form-review-name" required="">
                                                         </div>
-                                                        <!-- /.form-group -->
+                                               
                                                         <div class="form-group">
                                                             <label for="form-review-email">Email</label>
                                                             <input type="email" class="form-control" id="form-review-email" name="form-review-email" required="">
                                                         </div>
-                                                        <!-- /.form-group -->
+                                              
                                                         <div class="form-group">
                                                             <label for="form-review-message">Message</label>
                                                             <textarea class="form-control" id="form-review-message" name="form-review-message"  rows="3" required=""></textarea>
                                                         </div>
-                                                        <!-- /.form-group -->
+                                               
                                                         <div class="form-group">
                                                             <button type="submit" class="btn btn-default">Submit Review</button>
                                                         </div>
-                                                        <!-- /.form-group -->
+                                                
                                                     </div>
                                                     <div class="col-md-4">
                                                         <aside class="user-rating">
@@ -261,18 +259,12 @@
                                                     </div>
                                                 </div>
                                             </form>
-                                            <!-- /.main-search -->
-                                        </section>
-                                        <!--end Review Form-->
+                                        </section> -->
                                     </div>
-                                    <!-- /.col-md-8-->
                                 </div>
-                                <!-- /.row -->
-                            </section>
-                            <!-- /#main-content-->
+                            </section>                      
                         </div>
-                        <!-- /.col-md-8-->
-                        <!--Sidebar-->
+
                         <div class="col-md-3">
                             <aside id="sidebar">
                                 <section>
@@ -303,7 +295,7 @@
                                 <section>
                                     <a href="#"><img src="<?php echo base_url();?>assets/assets/img/ad-banner-sidebar.png" alt=""></a>
                                 </section>
-                                <section>
+<!--                                 <section>
                                     <header><h2>Categories</h2></header>
                                     <ul class="bullets">
                                         <li><a href="#" >Restaurant</a></li>
@@ -327,13 +319,12 @@
                                             <option value="5">Tokyo</option>
                                         </select>
                                     </div>
-                                    <!-- /.form-group -->
+                            
                                 </section>
                             </aside>
-                            <!-- /#sidebar-->
+                     
                         </div>
-                        <!-- /.col-md-3-->
-                        <!--end Sidebar-->
+-->
                     </div><!-- /.row-->
                 </section>
                 <!-- /.container-->

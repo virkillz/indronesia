@@ -7,6 +7,12 @@ class Submit extends CI_Controller {
 	{
 		$this->load->model('ModelPeta');
 
+		//header
+		$head['pagetitle']="Kirim video drone kamu";
+		$head['pageimage']=base_url().'assets/assets/img/calonpageimage.jpg';
+		$head['pagedescription']="Bergabung untuk mempromosikan karyamu dan objek pariwisata di seluruh Indonesia.";
+		$head['pagetype']="website";
+
 		$this->load->helper(array('form', 'url'));
 		$this->load->library('form_validation');
 		$this->form_validation->set_rules('url', 'Youtube URL', 'callback_url_check');
@@ -14,7 +20,7 @@ class Submit extends CI_Controller {
 		$data['kategori']=$this->ModelPeta->get_kategori();
 		if ($this->form_validation->run() == FALSE)
                 {
-						$this->load->view('frontpage-head');
+						$this->load->view('frontpage-head',$head);
 						$this->load->view('submit',$data);                        
                 }
                 else

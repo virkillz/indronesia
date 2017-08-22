@@ -201,57 +201,35 @@
                             <aside id="sidebar">
                                 <section>
                                     <header><h2>New Places</h2></header>
-                                    <a href="item-detail.html" class="item-horizontal small">
-                                        <h3>Cash Cow Restaurante</h3>
-                                        <figure>63 Birch Street</figure>
+
+                                    <?php 
+                                        foreach ($random as $item) {
+                                            echo '
+                                        <a href="'.base_url().'Detail?id='.$item->id.'" class="item-horizontal small" style="padding-bottom:15px;">
+                                        <h3>'.$item->title.'</h3>
+                                        <figure>'.$item->nama_lokasi.'</figure>
                                         <div class="wrapper">
-                                            <div class="image"><img src="<?php echo base_url();?>assets/assets/img/items/1.jpg" alt=""></div>
+                                            <div class="image"><img src="'.$item->image.'" alt=""></div>
                                             <div class="info">
                                                 <div class="type">
-                                                    <i><img src="<?php echo base_url();?>assets/assets/icons/restaurants-bars/restaurants/restaurant.png" alt=""></i>
-                                                    <span>Restaurant</span>
+                                                    <i><img src="'.base_url().'assets/'.$item->ikon.'" alt=""></i>
+                                                    <span>'.$item->kategori.'</span>
                                                 </div>
                                                 <div class="rating" data-rating="4"></div>
                                             </div>
                                         </div>
                                     </a>
-                                    <!--/.item-horizontal small-->
-                                    <a href="item-detail.html" class="item-horizontal small">
-                                        <h3>Blue Chilli</h3>
-                                        <figure>2476 Whispering Pines Circle</figure>
-                                        <div class="wrapper">
-                                            <div class="image"><img src="<?php echo base_url();?>assets/assets/img/items/2.jpg" alt=""></div>
-                                            <div class="info">
-                                                <div class="type">
-                                                    <i><img src="<?php echo base_url();?>assets/assets/icons/restaurants-bars/restaurants/restaurant.png" alt=""></i>
-                                                    <span>Restaurant</span>
-                                                </div>
-                                                <div class="rating" data-rating="3"></div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <!--/.item-horizontal small-->
-                                    <a href="item-detail.html" class="item-horizontal small">
-                                        <h3>Eddie’s Fast Food</h3>
-                                        <figure>4365 Bruce Street</figure>
-                                        <div class="wrapper">
-                                            <div class="image"><img src="<?php echo base_url();?>assets/assets/img/items/3.jpg" alt=""></div>
-                                            <div class="info">
-                                                <div class="type">
-                                                    <i><img src="<?php echo base_url();?>assets/assets/icons/restaurants-bars/restaurants/restaurant.png" alt=""></i>
-                                                    <span>Restaurant</span>
-                                                </div>
-                                                <div class="rating" data-rating="5"></div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <!--/.item-horizontal small-->
+
+                                            ';
+                                        }
+
+                                    ?>
                                 </section>
                                 <section>
                                     <a href="#"><img src="<?php echo base_url();?>assets/assets/img/ad-banner-sidebar.png" alt=""></a>
                                 </section>
-                                <section>
-                                    <header><h2>Categories</h2></header>
+<!--                                 <section>
+                                    <header><h2>Kategori</h2></header>
                                     <ul class="bullets">
                                         <li><a href="#" >Restaurant</a></li>
                                         <li><a href="#" >Steak House & Grill</a></li>
@@ -261,21 +239,7 @@
                                         <li><a href="#" >Bar & Lounge</a></li>
                                         <li><a href="#" >Pub</a></li>
                                     </ul>
-                                </section>
-                                <section>
-                                    <header><h2>Events</h2></header>
-                                    <div class="form-group">
-                                        <select class="framed" name="events">
-                                            <option value="">Select Your City</option>
-                                            <option value="1">London</option>
-                                            <option value="2">New York</option>
-                                            <option value="3">Barcelona</option>
-                                            <option value="4">Moscow</option>
-                                            <option value="5">Tokyo</option>
-                                        </select>
-                                    </div>
-                                    <!-- /.form-group -->
-                                </section>
+                                </section> -->
                             </aside>
                             <!-- /#sidebar-->
                         </div>
