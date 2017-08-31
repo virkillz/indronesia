@@ -8,9 +8,9 @@ class Submit extends CI_Controller {
 		$this->load->model('ModelPeta');
 
 		//header
-		$head['pagetitle']="Kirim video drone kamu";
-		$head['pageimage']=base_url().'assets/assets/img/calonpageimage.jpg';
-		$head['pagedescription']="Bergabung untuk mempromosikan karyamu dan objek pariwisata di seluruh Indonesia.";
+		$head['pagetitle']="Pamerkan video drone kamu";
+		$head['pageimage']=base_url().'assets/assets/img/dronegirl.jpg';
+		$head['pagedescription']="Peta interaktif video drone dari seluruh pelosok Indonesia.";
 		$head['pagetype']="website";
 
 		$this->load->helper(array('form', 'url'));

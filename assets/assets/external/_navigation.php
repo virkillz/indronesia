@@ -4,11 +4,11 @@
 <body>
 
 <ul>
-    <li><a href="<?php echo base_url();?>">Home</a></li>
-    <li><a href="/">Blog</a></li>
-    <li><a href="/Indronesia/Faq">FAQ</a></li>
-    <li><a href="/">Kontak Kami</a></li>
-    <li><a href="/">Tentang Kami</a></li>
+    <li><a href="Indronesia">Home</a></li>
+    <li><a href="blog">Blog</a></li>
+    <li><a href="Faq">FAQ</a></li>
+    <li><a href="Contact">Kontak Kami</a></li>
+    <li><a href="About">Tentang Kami</a></li>
 </ul>
 
 <!--[if lte IE 9]>
